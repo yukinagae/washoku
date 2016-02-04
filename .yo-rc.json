@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "reactTest",
+    "style": "css",
+    "postcss": false
+  }
+}
