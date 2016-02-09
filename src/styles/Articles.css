@@ -1,0 +1,35 @@
+.articles_title {
+    composes: h4 from "../style.css";
+    composes: text-center from "../style.css";
+    composes: mb-md from "../style.css";
+}
+
+.article {
+    composes: row-inlineblock from "../style.css";
+    composes: block-sm from "../style.css";
+}
+
+.article_title {
+    composes: section-sub-title from "../style.css";
+    composes: fw-bold from "../style.css";
+    composes: h3 from "../style.css";
+}
+
+.article_image {
+    composes: col-sm-3 from '../css/bootstrap.css';
+}
+
+.article_content {
+    composes: col-sm-9 from '../css/bootstrap.css';
+}
+
+.article p {
+    font-size: 15px;
+}
+
+.article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}

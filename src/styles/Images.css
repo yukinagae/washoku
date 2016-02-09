@@ -1,0 +1,21 @@
+.row {
+  composes: row from '../css/bootstrap.css';
+}
+
+.images_title {
+    composes: section-sub-title from "../style.css";
+    composes: h3 from "../style.css";
+    composes: fw-bold from "../style.css";
+}
+
+.image {
+    composes: col-xs-4 from '../css/bootstrap.css';
+    composes: mb-md from "../style.css";
+}
+
+.image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}

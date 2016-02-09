@@ -1,0 +1,48 @@
+.row {
+  composes: row from '../css/bootstrap.css';
+}
+
+.blog {
+    composes: bg-gray-lighter from "../style.css";
+    composes: frame from "../style.css";
+}
+
+.blog_container {
+    composes: block-padding-md from "../style.css";
+    composes: container from '../css/bootstrap.css';
+}
+
+.blog_left {
+    composes: col-sm-8 from '../css/bootstrap.css';
+}
+
+.blog_right {
+    composes: col-sm-4 from '../css/bootstrap.css';
+}
+
+.blog_title {
+    composes: section-sub-title from "../style.css";
+    font-size: 26px;
+    font-weight: 700;
+    composes: text-center from "../style.css";
+}
+
+@media (min-width: 768px) {
+.blog_title {
+    composes: section-sub-title from "../style.css";
+    font-size: 44px;
+    font-weight: 700;
+    composes: text-center from "../style.css";
+}}
+
+.blog_title a {
+    color: #323232;
+}
+
+.blog_title a:hover, a:focus {
+    color: #323232;
+}
+
+.blog aside {
+    display: block;
+}

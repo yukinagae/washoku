@@ -1,0 +1,31 @@
+.site_footer {
+    background-color: #333;
+    color: #FFF;
+    composes: text-center from "../style.css";
+    composes: block-padding-sm from "../style.css";
+}
+
+.site_footer ul {
+    padding: 0;
+    margin-bottom: 22.5px;
+}
+
+.site_footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.site_footer ul li a {
+    color: #FFF;
+}
+
+.site_footer ul li a:hover, a:focus {
+    color: #FFF;
+}
+
+.site_footer small {
+    border-top: 2px solid #666;
+    padding-top: 5px;
+    margin-top: 5px;
+}

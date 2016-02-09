@@ -13,7 +13,7 @@
     "serve:dist": "node server.js --env=dist",
     "dist": "npm run copy & webpack --env=dist",
     "lint": "eslint ./src",
-    "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./dist",
+    "copy": "copyfiles -f ./index.html ./favicon.ico ./dist",
     "clean": "rimraf dist/*",
     "release:major": "npm version major && npm publish && git push --follow-tags",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
@@ -59,7 +59,13 @@
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.12.0",
     "less": "^2.3.1",
-    "less-loader": "^2.2.2"
+    "less-loader": "^2.2.2",
+    "jquery": "^1.11.3",
+    "slick-carousel": "^1.5.9",
+    "bootstrap": "^3.3.5",
+    "iscroll": "^5.1.3",
+    "jquery-drawer": "^3.1.0",
+    "showup": "0.1.2"
   },
   "dependencies": {
     "core-js": "^2.0.0",

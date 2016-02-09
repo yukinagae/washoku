@@ -1,0 +1,36 @@
+.comments {
+    composes: mb-md from "../style.css";
+}
+
+.comments_title {
+    composes: section-sub-title from "../style.css";
+    composes: h3 from "../style.css";
+    composes: fw-bold from "../style.css";
+}
+
+.comment {
+    composes: mb-md from "../style.css";
+}
+
+.comment_title {
+    composes: section-sub-title from "../style.css";
+    font-size: 15px;
+    font-weight: 700;
+    composes: h4 from "../style.css";
+}
+
+@media (min-width: 768px) {
+.comment_title {
+    composes: section-sub-title from "../style.css";
+    font-size: 19px;
+    font-weight: 700;
+    composes: h4 from "../style.css";
+}}
+
+.comment_title a {
+    color: #323232;
+}
+
+.comment_title a:hover, a:focus {
+    color: #323232;
+}

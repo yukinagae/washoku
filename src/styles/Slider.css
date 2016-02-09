@@ -1,0 +1,76 @@
+.container {
+  composes: container from '../css/bootstrap.css';
+}
+
+.row {
+  composes: row from '../css/bootstrap.css';
+}
+
+.slider_col {
+    composes: col-md-8 from '../css/bootstrap.css';
+    composes: col-lg-8 from '../css/bootstrap.css';
+    composes: col-md-offset-2 from '../css/bootstrap.css';
+    composes: col-lg-offset-2 from '../css/bootstrap.css';
+    composes: text-center from '../style.css';
+}
+
+.slider_visual {
+    background-color: #6e6e6e;
+    color: #FFF;
+    background-size: cover;
+    padding: 120px 0;
+    /* background: url('https://raw.githubusercontent.com/yeoman/media/master/optimized/yeoman-horizontal.png') center -220px; */
+}
+@media (min-width: 768px) {
+.slider_visual {
+    /* padding: 120px 0; */
+}}
+
+.slider_visual_link {
+    composes: btn from '../css/bootstrap.css';
+    composes: btn-ghost from "../style.css";
+}
+
+.slider_visual a:hover, a:focus {
+    color: #FFF;
+}
+
+.slider_title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-bottom: 24px;
+    position: relative;
+    text-shadow: 1px 1px 10px #000;
+}
+@media (min-width: 768px) {
+.slider_title {
+    font-size: 60px;
+}}
+
+.slider_content:before {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.slider_content {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #000;
+}
+@media (min-width: 768px) {
+.slider_content {
+    font-size: 20px;
+}}

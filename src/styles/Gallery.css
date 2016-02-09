@@ -1,0 +1,37 @@
+.row {
+  composes: row from '../css/bootstrap.css';
+}
+
+.galleries {
+    composes: frame from "../style.css";
+    composes: text-center from "../style.css";
+}
+
+.galleries_container {
+    composes: container from '../css/bootstrap.css';
+    composes: block-padding-md from '../style.css';
+}
+
+.gallery {
+    composes: col-sm-6 from '../css/bootstrap.css';
+}
+
+.gallery img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.gallery_title {
+    composes: section-sub-title from "../style.css";
+    font-size: 26px;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+.gallery_title {
+    composes: section-sub-title from "../style.css";
+    font-size: 44px;
+    font-weight: 300;
+}}

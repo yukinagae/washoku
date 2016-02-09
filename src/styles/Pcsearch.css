@@ -1,0 +1,23 @@
+.form_inline {
+    composes: form-inline from '../css/bootstrap.css';
+}
+
+.form_group {
+    composes: form-group from '../css/bootstrap.css';
+}
+
+.form_control {
+    composes: form-control from '../css/bootstrap.css';
+}
+
+.pc_search {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.pc_search_button {
+    composes: btn from "../style.css";
+    composes: btn-sm from "../style.css";
+    composes: btn-info from "../style.css";
+}

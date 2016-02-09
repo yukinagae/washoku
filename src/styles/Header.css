@@ -1,0 +1,61 @@
+.container {
+  composes: container from '../css/bootstrap.css';
+}
+
+@media (min-width: 768px) {
+.site_header .container {
+    position: relative;
+}}
+
+.site_header {
+  border-bottom: 1px solid #ddd;
+}
+
+.site_header {
+  display: none;
+  composes: text-center from "../style.css";
+}
+
+@media (min-width: 768px) {
+.site_header {
+    display: block;
+}}
+
+.site_header a, a:hover, a:focus {
+    color: #323232;
+}
+
+.site_header p {
+    margin-top: -30px;
+    float: right;
+}
+
+.site_header nav ul {
+    display: table;
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    padding: 1em 0;
+    margin-bottom: 0;
+}
+
+.site_header nav ul li {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media (min-width: 992px) {
+.site_header nav ul {
+    font-size: 14px;
+}}
+
+.site_header nav ul li a {
+    display: block;
+    border-right: 1px solid #ddd;
+}
+
+.site_header nav ul li:first-child a {
+    border-left: 1px solid #ddd;
+}

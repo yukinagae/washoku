@@ -1,0 +1,14 @@
+.twitter {
+    composes: fa from '../css/font-awesome.css';
+    composes: fa-twitter-square from '../css/font-awesome.css';
+}
+
+.facebook {
+    composes: fa from '../css/font-awesome.css';
+    composes: fa-facebook-square from '../css/font-awesome.css';
+}
+
+.instagram {
+    composes: fa from '../css/font-awesome.css';
+    composes: fa-instagram from '../css/font-awesome.css';
+}

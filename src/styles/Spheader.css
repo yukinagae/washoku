@@ -1,0 +1,86 @@
+.sp_header {
+  -webkit-transition: .3s;
+          transition: .3s;
+  composes: navbar from '../css/bootstrap.css';
+  composes: navbar-default from '../css/bootstrap.css';
+  composes: navbar-fixed-top from '../css/bootstrap.css';
+}
+@media (min-width: 768px) {
+.sp_header {
+    display: none;
+}}
+.sp_header.navbar-default {
+    border: none;
+    margin-bottom: 0;
+    background: #fff;
+}
+.sp_header.navbar-default .container {
+    padding: 0 15px 0;
+}
+@media (min-width: 992px) {
+.sp_header.navbar-default .container {
+    padding: 30px 15px 0;
+}}
+
+.sp_header.navbar-default .nav.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: rgba(50, 50, 50, 0.9);
+}
+
+@media (min-width: 768px) {
+.sp_header.navbar-default .nav.navbar-nav {
+    background: none;
+}}
+.sp_header.navbar-default .nav.navbar-nav > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+.sp_header.navbar-default .nav.navbar-nav > li > a:hover {
+    color: #fff;
+}
+.sp_header.navbar-default .navbar-header {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.sp_header.navbar-default .navbar-brand {
+    height: auto;
+    margin-right: 30px;
+    padding: 5px 15px;
+}
+.sp_header.navbar-default .navbar-collapse {
+    max-height: none;
+    border: none;
+    box-shadow: none;
+}
+@media (min-width: 768px) {
+.sp_header.navbar-default .navbar-collapse .navbar-nav {
+    margin-top: 9px;
+    margin-right: -30px;
+}}
+@media (min-width: 992px) {
+.sp_header.navbar-default .navbar-collapse .navbar-nav {
+    margin-top: -6px;
+}}
+.sp_header.navbar-default .navbar-collapse .navbar-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.sp_header.navbar-default .navbar-toggle {
+    margin-right: 0;
+    margin-top: 15px;
+}
+.sp_header.navbar-default .navbar-toggle:hover {
+    background: none;
+}
+.sp_header.navbar-default .navbar-toggle .icon-bar {
+    background: #fff;
+}
+.sp_header.is-black {
+    background: #222;
+}
+.sp_header.is-black .navbar-brand {
+    color: #FFF;
+}
+.sp_header.is-black .navbar-collapse .navbar-nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
