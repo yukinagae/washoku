@@ -5,9 +5,9 @@ import React from 'react';
 import styles from '../styles/Spheader.css';
 
 let Logo = (props) =>
-    <h1 className="navbar-header">
-      <a href={props.logo.link} className="navbar-brand">
-        <img src={props.logo.path} height="40" width="40"/>
+    <h1>
+      <a href={props.logo.link}>
+        <img src={props.logo.path} height="50" width="50"/>
       </a>
     </h1>
 
@@ -25,7 +25,7 @@ class SpheaderComponent extends React.Component {
         return (
             <div id="sp-header" className={styles.sp_header} role="banner">
               <Logo logo={this.props.logo}/>
-              <DrawerHeader />
+            {/* <DrawerHeader /> */}
             </div>
         );
     }

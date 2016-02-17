@@ -164,51 +164,19 @@ let places = {
     ]
 };
 
-/* let Drawer = (props) =>
-   <div>
-   <div className="drawer drawer--right drawer-main drawer-default">
-   <nav className={styles.drawer_nav} role="navigation">
-   <ul className="drawer-menu">
-   <li className="drawer-menu-item"><a href="/about/">About</a></li>
-   <li className="drawer-menu-item"><a href="/contact/">Contact</a></li>
-   <li className="drawer-menu-item"><a href="/terms/">Terms</a></li>
-   <li className="drawer-menu-item"><a href="/signup/">Sign up</a></li>
-   <li className="drawer-menu-item"><a href="/login/">Log in</a></li>
-   <li className="drawer-menu-item"><a href="https://twitter.com/"><i className="fa fa-twitter-square"></i> Twitter</a></li>
-   <li className="drawer-menu-item"><a href="https://facebook.com/"><i className="fa fa-facebook-square"></i> Facebook</a></li>
-   <li className="drawer-menu-item"><a href="https://instagram.com/"><i className="fa fa-instagram"></i> Instagram</a></li>
-   </ul>
-   <div style={{ margin: '10px' }}>
-   <form method="get" action="/">
-   <div className="form-group">
-   <input type="text" name="s" className="form-control" placeholder="Search..."/>
-   </div>
-   <input type="submit" className="btn btn-info btn-sm btn-block" value="Search"/>
-   </form>
-   </div>
-   </nav>
-   </div>
-   </div> */
-
 class AppComponent extends React.Component {
 
     componentDidMount() {
-        /*         $('.navbar-fixed-top').autoHidingNavbar(); */
-        /* var $drawer = $('.drawer');
-           $drawer.drawer(); */
      }
 
   render() {
     return (
-      <div className="home drawer drawer--right drawer-close">
+      <div>
         <Header logo={logo} links={header_links} search={search} sns={sns} account={account}/>
         <Slider sliders={sliders} />
-        <div style={{ position: 'relative' }}>
           <Gallery galleries={galleries}/>
           <Blog blog={blog} articles={articles} comments={comments} images={images}/>
-          <Footer site={site} logo={logo} links={footer_links}/>
-        </div>
-        {/*<Drawer />*/}
+        <Footer site={site} logo={logo} links={footer_links}/>
       </div>
     );
   }
